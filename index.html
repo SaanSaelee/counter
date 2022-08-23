@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passenger Counter</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="hero">
+      <div class="container">
+        <div class="counter__wrap">
+          <h1 class="counter__title">Houseplant Meetup</h1>
+          <p class="counter__text">Attendees: <span id="counter"></span></p>
+          <div class="count">
+            <button id="add-el" class="add-el" onclick="add()">+1</button>
+            <button id="subtract-el" class="subtract-el" onclick="subtract()">-1</button>
+          </div>
+        </div>
+        <div class="plants">
+          <img src="images/Humaaans - Plant 1.png" alt="" />
+          <img src="images/Humaaans - 3 Characters.png" alt="" />
+          <img src="images/Humaaans - Plant 5.png" alt="" />
+          <img src="images/Humaaans - Plant 2.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

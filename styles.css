@@ -1,0 +1,76 @@
+:root {
+    --clr-primary: #48929B;
+    --clr-secondary: #7DC6CB;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  font-family: "Aboreto", cursive;
+  background: var(--clr-primary);
+}
+
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--clr-secondary);
+    border-radius: 1rem;
+    text-align: center;
+    background: #fff;
+    padding: 5rem;
+}
+
+#counter {
+    font-weight: 600;
+}
+
+.counter__wrap {
+}
+
+.counter__title {
+    font-size: 4rem;
+    
+}
+
+.counter__text {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.add-el {
+    background: var(--clr-secondary);
+    border: 2px solid var(--clr-secondary);
+}
+
+.subtract-el {
+    background: #fff;
+    border: 2px solid var(--clr-secondary);
+}
