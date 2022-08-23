@@ -44,7 +44,6 @@ button:focus {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  width: 80%;
   margin: 0 auto;
 }
 
@@ -58,8 +57,10 @@ button:focus {
   text-align: center;
   background: #fff;
   padding: 5rem;
+  width: 80%;
+  max-width: 1080px;
+  margin: 5rem;
 }
-
 
 .counter__title {
   font-size: 5rem;
@@ -96,13 +97,13 @@ button:focus {
 }
 
 .plant--img {
-    width: 100%;
+  width: 100%;
 }
 
 .people {
-    position: absolute;
+  position: absolute;
 }
 
 .people10 {
-    left: -10rem;
+  left: -10rem;
 }
