@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Passenger Counter</title>
+    <title>Counter</title>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
@@ -20,21 +20,65 @@
   <body>
     <section id="hero">
       <div class="container">
-        <div class="counter__wrap">
-          <h1 class="counter__title">Houseplant Meetup</h1>
-          <p class="counter__text">Attendees: <span id="counter"></span></p>
-          <div class="count">
-            <button id="add-el" class="add-el" onclick="add()">+1</button>
-            <button id="subtract-el" class="subtract-el" onclick="subtract()">-1</button>
+          <div class="counter__wrap">
+            <h1 class="counter__title">Houseplant Meetup</h1>
+            <p class="attendees">Attendees: <span id="attendees"></span></p>
+            <p class="last-count">Last Count: <span id="save-el"></span></p>
+            <div class="count">
+              <button id="add-btn" class="add-btn" onclick="add()">+1</button>
+              <button
+                id="subtract-btn"
+                class="subtract-btn"
+                onclick="subtract()"
+              >
+                -1
+              </button>
+            </div>
+            <div>
+              <button id="save-btn" class="save-btn" onclick="save()">
+                Save
+              </button>
+            </div>
+          </div>
+          <div class="plants">
+            <div>
+              <img
+                class="plant--img"
+                src="images/Humaaans - Plant 1.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="plant--img"
+                src="images/Humaaans - 3 Characters.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="plant--img"
+                src="images/Humaaans - Plant 5.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="plant--img"
+                src="images/Humaaans - Plant 2.png"
+                alt=""
+              />
+            </div>
+            <!-- <img class="people people0" src="images/Humaaans - Standing.png" alt=""> -->
+            <!-- <img class="people people1" src="images/Humaaans - Standing (1).png" alt=""> -->
+            <!-- <img class="people people2" src="images/Humaaans - Standing (2).png" alt=""> -->
+            <!-- <img class="people people" src="images/Humaaans - Standing (7).png" alt=""> -->
+            <img class="people people10" src="images/Humaaans - Standing (10).png" alt="">
+            <!-- <img class="people people" src="" alt=""> -->
+            <!-- <img class="people people" src="" alt=""> -->
+            <!-- <img class="people people" src="" alt=""> -->
           </div>
         </div>
-        <div class="plants">
-          <img src="images/Humaaans - Plant 1.png" alt="" />
-          <img src="images/Humaaans - 3 Characters.png" alt="" />
-          <img src="images/Humaaans - Plant 5.png" alt="" />
-          <img src="images/Humaaans - Plant 2.png" alt="" />
-        </div>
-      </div>
     </section>
 
     <script src="scripts.js"></script>
